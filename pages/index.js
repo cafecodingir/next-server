@@ -1,18 +1,19 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import {Button,createTheme, ThemeProvider} from "@mui/material";
+import { Button, createTheme, ThemeProvider } from "@mui/material";
 
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
 
     const theme = createTheme({
-        direction:"rtl",
+        direction: 'rtl',
         textAlign: 'right',
         typography: {
             fontFamily: ['Vazir']
-        },});
+        },
+    });
 
     return (
         <ThemeProvider theme={theme}>
@@ -29,13 +30,13 @@ export default function Home() {
                         <Link href={"/api/users"}>
                             All Users
                         </Link>
-                        <br/>
-                        <br/>
-                        <br/>
+                        <br />
+                        <br />
+                        <br />
                         <div>
                             <Link href={"/express"}>
-                                <Button style={{fontWeight: 300}} variant="contained">
-                                    آدرس مستقیم از اکسپرس
+                                <Button style={{ fontWeight: 300 }} variant="contained">
+                                    آدرس مستقیم از express
                                 </Button>
                             </Link>
                         </div>
