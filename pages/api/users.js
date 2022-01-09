@@ -9,7 +9,7 @@ export default async function handler(req, res) {
     },
   })
 
-  console.dir(allUsers, { depth: null })
+  // console.dir(allUsers, { depth: null })
 
   res.json(allUsers);
 }
